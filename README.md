@@ -11,18 +11,14 @@ For now, [WG-common](https://github.com/chaoss/wg-common/) has been chosen for m
 * Tweaked the [WG-common](https://github.com/chaoss/wg-common/) repository such that it fits the format in [this document](https://docs.google.com/document/d/1chPzgJa49sO_f3wVqp_NLJupSVyKHSVyuFuwzl4m4KI/edit?pli=1#)
 * Made some minor changes to adapt it to the automation scripts
 * Pushed the changes on local branch
-
-*A point worth metioning is that the [WG guidelines](https://docs.google.com/document/d/1chPzgJa49sO_f3wVqp_NLJupSVyKHSVyuFuwzl4m4KI/edit?pli=1#) are so beautifully build that the automation
-scripts are naturally compatible with it, only minor changes are requried*
-
-## Working
-
-* Clone the `working-group` repository [from local branch](https://github.com/ritik-malik/wg-common/tree/abs-to-rel) in the dir `test-env`
-* Move all the metrics files from cloned repo in `test-env` along with common `images` dir
-* Delete rest of the cloned repo
+* Clone this `working-group` repository [from local branch](https://github.com/ritik-malik/wg-common/tree/abs-to-rel) in the dir `test-env`
+* Move all the metrics files from this cloned repo in `test-env` along with common `images` dir
+* Delete rest of the cloned repo except metric files and images
 * Copy all scripts from `scripts` dir to `test-env`
 * Call the `generate_pdf.sh` script in `test-env` dir to generate the output PDF
 * The `output.pdf` will be located in `output` dir
+
+Note : The usage of `generate_pdf.sh` can be found in [Microtask repository](https://github.com/ritik-malik/Microtasks)
 
 ## Usage
 
@@ -33,7 +29,7 @@ scripts are naturally compatible with it, only minor changes are requried*
 
 ## References
 
-* [CHAOSS issue](https://github.com/chaoss/website/issues/537)
+* [Automate Metrics Release and Process Improvement #537](https://github.com/chaoss/website/issues/537)
 * [CHAOSS WG-common](https://github.com/chaoss/wg-common/)
 * [CHAOSS WG guidelines](https://docs.google.com/document/d/1chPzgJa49sO_f3wVqp_NLJupSVyKHSVyuFuwzl4m4KI/edit?pli=1#)
 * [Local branch WG-common](https://github.com/ritik-malik/wg-common/tree/abs-to-rel)
